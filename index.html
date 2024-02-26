@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .form{
+            margin-top: 50px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .card{
+            margin-left: 100px;
+        }
+        
+        .card{
+            margin-top: 50px;
+            width: 500px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(sa-18.jpg);
+        }
+        .nom{
+            margin-top: 170px;
+            margin-left: 50px;
+            font-size: 25px;
+        }
+        .dat{
+            margin-left: 230px;
+            margin-top: 30px;
+        }
+        .nam{
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maga" style="display: flex;">
+        <div class="form">
+            <input type="text" id="cardNumber" placeholder="Номер карты " maxlength="16"><br>
+            <input type="text" id="date" placeholder="Дата" maxlength="4"><br>
+            <input type="text" id="name" placeholder="ФИО"><br>
+            <input type="text" id="SVG" maxlength="3" placeholder="SVG" pattern="[A-Za-zА-Яа-яЁё\s]+"><br>
+            <button id="Button">Отправить</button>
+        </div>
+        <div class="card" >
+            <p class="nom" style="color: aliceblue;"></p>
+            <p class="dat"  style="color: aliceblue;"></p>
+            <p class="nam"  style="color: aliceblue;"></p>
+        </div>
+    </div>
+    
+    
+    
+    <br>
+    
+    <table id="dataTable" style="margin-top: 300px;">
+        <thead>
+            <tr>
+                <th>Номер карты</th>
+                <th>Дата</th>
+                <th>ФИО</th>
+                <th>SVG</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <script src="scr.js"></script>
+</body>
+
+</html>
+
+</html>
